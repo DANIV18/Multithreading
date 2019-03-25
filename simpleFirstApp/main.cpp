@@ -19,7 +19,9 @@ int main()
         }
     };
 
-    std::thread th(temp10Second);
+    std::thread th1(temp10Second);
+    std::thread th2(tempFunc);
+
     for(size_t i(0); i != 5; ++i)
     {
         std::cout<<"main : "<<i<<" second"<<std::endl;
